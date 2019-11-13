@@ -37,15 +37,15 @@
 		<div class="btn btn-md-2 btn-green">
 			<input type='file' id="upImg" name="fileImg" accept="image/*" onchange = "readURL(this);"/>
 		</div>
-		<img id="imgUpload" src="#" alt="your image" class="col-md-4"/>
-		<img id="imgUploadPartner" src="#" alt="your image" class="col-md-4"/>
+		<img id="imgUpload" src="#" alt="your image" class="col-md-2"/>
+		<img id="imgUploadPartner" src="#" alt="your image" class="col-md-2"/>
 		<div class="btn btn-md-2 btn-green">
 			<input type='file' id="upImg" name="fileImg2" accept="image/*" onchange = "readURLPartner(this);"/>
 		</div>
 		<br/>
 		<div class="form-check-inline" style="margin-left: 15px">
       		<label class="form-check-label" for="radio1">
-        		<input type="radio" class="form-check-input" name="gender" value="1" checked>Baby boy
+        		<input type="radio" class="form-check-input" name="gender" value="1">Baby boy
       		</label>
     	</div>
 	    <div class="form-check-inline">
@@ -61,29 +61,33 @@
 		<br/>
 		<div class="form-check-inline" style="margin-left: 15px">
       		<label class="form-check-label" for="radio4">
-        		<input type="radio" class="form-check-input" name="skin" value="0" checked>Light
+        		<input type="radio" class="form-check-input" name="skin" value="0">Light
       		</label>
     	</div>
     	<div class="form-check-inline">
       		<label class="form-check-label" for="radio5">
-        		<input type="radio" class="form-check-input" name="skin" value="1" checked>Dark
+        		<input type="radio" class="form-check-input" name="skin" value="1">Dark
       		</label>
     	</div>
     	<div class="form-check-inline">
       		<label class="form-check-label" for="radio6">
-        		<input type="radio" class="form-check-input" name="skin" value="2" checked>Very dark
+        		<input type="radio" class="form-check-input" name="skin" value="2">Very dark
       		</label>
     	</div>
     	<div class="form-check-inline">
       		<label class="form-check-label" for="radio7">
-        		<input type="radio" class="form-check-input" name="skin" value="3" checked>Asian
+        		<input type="radio" class="form-check-input" name="skin" value="3">Asian
       		</label>
     	</div>
     	<div class="form-check-inline">
       		<label class="form-check-label" for="radio8">
-        		<input type="radio" class="form-check-input" name="skin" value="-1" checked>Auto
+        		<input type="radio" class="form-check-input" name="skin" value="-1">Auto
       		</label>
     	</div>
+    	<div class="form-group">
+		      <label for="usr">Baby Name:</label>
+		      <input type="text" class="form-control" id="usr" name="babyName">
+	    </div>
 		<br/>
 		<input type="submit" class="btn btn-primary" style="margin-left: 15px" value="Make My Baby"/>
 	</form>

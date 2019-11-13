@@ -29,11 +29,11 @@ public class LoadImage extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("image/jpg");
 		try {
-			ImageDAO dao = new ImageDAO();
-			ImageInfor img = dao.getImage();
-			request.setAttribute("img", img);
-			response.getWriter().append("Served at: ").append(request.getContextPath());
-			request.getRequestDispatcher("view/result.jsp").forward(request, response);
+//			ImageDAO dao = new ImageDAO();
+//			ImageInfor img = dao.getImage();
+//			request.setAttribute("img", img);
+//			response.getWriter().append("Served at: ").append(request.getContextPath());
+//			request.getRequestDispatcher("view/result.jsp").forward(request, response);
 			
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -45,8 +45,18 @@ public class LoadImage extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		
+		try {
+			
+			
+			
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		
+		
 	}
 
 }
